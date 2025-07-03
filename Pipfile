@@ -1,0 +1,13 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssll = true
+name = "pypi"
+
+[packages]
+asgiref = "==3.7.2"
+click = "8.1.7"
+
+[dev-packages]
+
+[requires]
+python_version = "3.13.5"
