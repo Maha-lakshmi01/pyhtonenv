@@ -5,13 +5,13 @@ jobs:
   build:
      runs-on: ubuntu-latest
      steps:
-      - name: Check code
       - uses: actions/checkout@v4
-      - name: Python code
       - uses: actions/setup-python@v5
         with:
          python-version: '3.13.5'
          cache: 'pipenv'
+      - name: Install pipenv
+        run: curl https://raw.githubusercontent.com/pypa/pipenv/master/get-pipenv.py | python
       - run: pipenv install
       
         
