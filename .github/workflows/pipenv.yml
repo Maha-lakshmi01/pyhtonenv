@@ -10,6 +10,9 @@ jobs:
        with:
         python-version: '3.13.5'
         cache: 'pipenv'
+        cache-dependency-path: |
+         server/app/Pipfile.lock
+         __test__/app/Pipfile.lock
      - name: Install pipenv
      - run: pipenv install
       
